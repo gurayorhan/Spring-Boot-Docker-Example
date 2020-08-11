@@ -1,0 +1,11 @@
+docker-compose -f  Desktop/Spring-Examples/spring-mongo-rest-api/src/main/resources/docker-compose.yml up -d
+docker stop veri
+docker ps -> verileri görüntüler
+
+version: '3.1'
+services:
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+    command:  --serviceExecutor adaptive
